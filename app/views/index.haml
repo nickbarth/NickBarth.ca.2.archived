@@ -1,0 +1,55 @@
+!!! 5
+%html
+  %head
+    %title Nick Barth
+    %meta{ name: "viewport", content: "width=device-width, minimum-scale=1.0, maximum-scale=1.0" }/
+    %link{ rel: :icon, href: "/favicon.ico", type: "image/x-icon"}/
+    %link{ rel: :stylesheet, type: "text/css", href: "/css/reset.css" }/
+    %link{ rel: :stylesheet, type: "text/css", href: "http://fonts.googleapis.com/css?family=Fredericka+the+Great|Ubuntu|Nobile|Droid+Serif|Raleway:100|muli" }/
+    %link{ rel: :stylesheet, type: "text/css", href: "/css/style.css" }/
+  %body
+    .container 
+      %header.header
+        %h1.signature NickBarth
+        .tagline
+          I'm a young entrepenuer and developer.  <br/>
+          Edmonton is my home and I enjoy helping it grow.
+        %p.text
+          %ul.sociallist
+            %li= social_tag "twitter", "http://twitter.com/nickbarth"
+            %li= social_tag "linkedin", "http://linkedin.com/in/barthn/"
+            %li= social_tag "email", "mailto:nick@nickbarth.ca"
+      %section.banner
+        %img.image{ src: "/images/edmonton.jpg" } 
+      %section.main
+        %p.text
+          I'm a strong supporter of local business and building a better community. 
+          If you're interested in working together with me feel free to
+          %a{ href: "#contact" } contact me
+          or check out some of the 
+          %a{ href: "#projects" } projects
+          I'm involved in.
+        %a{ name: "projects" }
+        %h2.title Projects
+        %p.text
+          Here's some of the projects in and around Edmonton I'm currently involved in. 
+
+        .projects
+          = project_tag("Startup Edmonton", "/images/startupedm.png", "http://startupedmonton.com/")
+          = project_tag("Cinder", "/images/cinder.jpg", "http://www.facebook.com/CinderChats")
+          = project_tag("Ruby Meetup", "/images/yegrb.jpg", "http://www.yegrb.com/")
+          .clear
+
+        %a{ name: "contact" }
+        %h2.title
+          Contact
+        %p.text
+          Interested in doing business?
+          Send me an email at 
+          <a href="mailto:nick@nickbarth.ca">nick@nickbarth.ca</a>.
+      %footer
+        %p.footer 
+          &copy 2012 <a href="mailto:nick@nickbarth.ca">Nick Barth</a> design and code
+          -# with photos by
+          -# <a href="http://www.flickr.com/photos/hobolens/">Brian</a>
+          -# and <a href="https://www.facebook.com/CinderChats">Vicky</a> 

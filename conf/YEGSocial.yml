@@ -1,0 +1,12 @@
+chdir: /www/50.116.5.201
+environment: production
+socket: /tmp/50.116.5.201.sock
+timeout: 30
+log: log/thin.log
+pid: tmp/pids/thin.pid
+max_conns: 1024
+max_persistent_conns: 512
+require: []
+wait: 30
+servers: 2
+daemonize: true
