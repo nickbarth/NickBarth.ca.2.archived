@@ -2,15 +2,15 @@ require './db/schema'
 
 namespace :server do
   task :start do
-    system "service thin start-single /etc/thin/50.116.5.201.yaml"
+    system "service thin start-single /etc/thin/NickBarthCa.yml"
   end
 
   task :stop do
-    system "service thin stop-single /etc/thin/50.116.5.201.yaml"
+    system "service thin stop-single /etc/thin/NickBarthCa.yml"
   end
 
   task :restart do
-    system "service thin restart-single /etc/thin/50.116.5.201.yaml"
+    system "service thin restart-single /etc/thin/NickBarthCa.yml"
   end
 end
 
