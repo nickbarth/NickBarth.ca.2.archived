@@ -9,7 +9,7 @@
     %link{ rel: :stylesheet, type: "text/css", href: "/css/style.css" }/
   %body
     .container 
-      %header.header
+      .header
         %h1.signature NickBarth
         .tagline
           I'm a young entrepenuer and developer.  <br/>
@@ -19,9 +19,9 @@
             %li= social_tag "twitter", "http://twitter.com/nickbarth"
             %li= social_tag "linkedin", "http://linkedin.com/in/barthn/"
             %li= social_tag "email", "mailto:nick@nickbarth.ca"
-      %section.banner
+      .banner
         %img.image{ src: "/images/edmonton.jpg" } 
-      %section.main
+      .main
         %p.text
           I'm a strong supporter of local business and building a better community. 
           If you're interested in working together with me feel free to
@@ -47,9 +47,8 @@
           Interested in doing business?
           Send me an email at 
           <a href="mailto:nick@nickbarth.ca">nick@nickbarth.ca</a>.
-      %footer
-        %p.footer 
-          &copy 2012 <a href="mailto:nick@nickbarth.ca">Nick Barth</a> design and code
-          -# with photos by
-          -# <a href="http://www.flickr.com/photos/hobolens/">Brian</a>
-          -# and <a href="https://www.facebook.com/CinderChats">Vicky</a> 
+      .footer 
+        &copy 2012 <a href="mailto:nick@nickbarth.ca">Nick Barth</a> design and code
+        -# with photos by
+        -# <a href="http://www.flickr.com/photos/hobolens/">Brian</a>
+        -# and <a href="https://www.facebook.com/CinderChats">Vicky</a> 
