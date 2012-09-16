@@ -12,43 +12,36 @@
       .header
         %h1.signature NickBarth
         .tagline
-          I'm a young entrepenuer and developer.  <br/>
+          I'm a young entrepenuer and developer.<br/>
           Edmonton is my home and I enjoy helping it grow.
         %p.text
           %ul.sociallist
-            %li= social_tag "twitter", "http://twitter.com/nickbarth"
-            %li= social_tag "linkedin", "http://linkedin.com/in/barthn/"
-            %li= social_tag "email", "mailto:nick@nickbarth.ca"
+            = social_tag "twitter", "http://twitter.com/nickbarth"
+            = social_tag "linkedin", "http://linkedin.com/in/barthn/"
+            = social_tag "email", "mailto:nick@nickbarth.ca"
       .banner
-        %img.image{ src: "/images/edmonton.jpg" } 
+        %a{ href: 'http://www.flickr.com/photos/hobolens/6866880165/in/photostream/', target: '_blank' }
+          %img.image{ src: "/images/edmonton.jpg" } 
       .main
         %p.text
           I'm a strong supporter of local business and building a better community. 
           If you're interested in working together with me feel free to
-          %a{ href: "#contact" } contact me
-          or check out some of the 
-          %a{ href: "#projects" } projects
-          I'm involved in.
+          #{link_to '#contact', 'contact me'} or check out some of the 
+          #{link_to '#projects', 'projects'} I'm involved in.
         %a{ name: "projects" }
         %h2.title Projects
         %p.text
           Here are some of the projects in and around Edmonton I'm currently involved in. 
-
-        .projects
+        %ul.projects
           = project_tag("Startup Edmonton", "/images/startupedm.png", "http://startupedmonton.com/")
           = project_tag("Cinder", "/images/cinder.jpg", "http://www.facebook.com/CinderChats")
           = project_tag("Ruby Meetup", "/images/yegrb.jpg", "http://www.yegrb.com/")
           .clear
-
         %a{ name: "contact" }
         %h2.title
           Contact
         %p.text
           Interested in doing business?
-          Send me an email at 
-          <a href="mailto:nick@nickbarth.ca">nick@nickbarth.ca</a>.
+          Send me an email at #{link_to 'mailto:nick@nickbarth.ca', 'Nick Barth'}.
       .footer 
-        &copy 2012 <a href="mailto:nick@nickbarth.ca">Nick Barth</a> design and code
-        -# with photos by
-        -# <a href="http://www.flickr.com/photos/hobolens/">Brian</a>
-        -# and <a href="https://www.facebook.com/CinderChats">Vicky</a> 
+        &copy 2012 #{link_to 'mailto:nick@nickbarth.ca', 'Nick Barth'} design and code
