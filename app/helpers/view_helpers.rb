@@ -1,7 +1,11 @@
 class NickBarthCa < Sinatra::Base
   helpers do
-    def link_to(text, url)
-      "<a href='#{url}'>#{text}</a>"
+    # def link_to(text, url)
+    def link_to(url)
+      # "<a href='#{url}'>#{text}</a>"
+      haml_tag :a, url: url do
+        yield
+      end
     end 
 
     def image_tag(name)

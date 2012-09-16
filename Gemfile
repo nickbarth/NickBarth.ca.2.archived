@@ -1,19 +1,14 @@
-source 'https://rubygems.org'
-
-gem 'sinatra'
-gem 'sqlite3'
-gem 'haml'
-gem 'rest-client'
-gem 'activerecord'
-gem 'json'
+source :rubygems
 
 group :development do
-  gem 'sass'
-  gem 'watchr'
+  gem 'sinatra', require: 'sinatra'
+  gem 'haml', require: 'haml'
+  gem 'sass', require: 'sass'
+  gem 'thin', require: 'thin'
 end
 
 group :test do
-  gem 'capybara'
-  gem 'rspec'
-  gem 'rack-test'
+  gem 'capybara', require: 'capybara'
+  gem 'rspec', require: 'rspec'
+  gem 'rack-test', require: 'rack-test'
 end
